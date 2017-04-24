@@ -1,0 +1,18 @@
+valgrind --tool=cachegrind ./a.out
+
+
+==4280== I   refs:      16,394
+==4280== I1  misses:       410
+==4280== LLi misses:       410
+==4280== I1  miss rate:   2.50%
+==4280== LLi miss rate:   2.50%
+==4280== 
+==4280== D   refs:       5,292  (3,522 rd   + 1,770 wr)
+==4280== D1  misses:       283  (  166 rd   +   117 wr)
+==4280== LLd misses:       283  (  166 rd   +   117 wr)
+==4280== D1  miss rate:    5.3% (  4.7%     +   6.6%  )
+==4280== LLd miss rate:    5.3% (  4.7%     +   6.6%  )
+==4280== 
+==4280== LL refs:          693  (  576 rd   +   117 wr)
+==4280== LL misses:        693  (  576 rd   +   117 wr)
+==4280== LL miss rate:     3.1% (  2.8%     +   6.6%  )
